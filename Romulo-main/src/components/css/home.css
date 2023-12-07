@@ -1,0 +1,92 @@
+/* Estilos y fondo para la página de inicio de sesión y registro */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../img/fondo.jpg); */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center center;
+    /* Centra la imagen en la pantalla */
+    height: auto;
+}
+
+.logo img {
+    max-width: 100px;
+    /* Ajusta el ancho máximo según tu preferencia */
+}
+
+h2 {
+    margin-top: 10px;
+    color: #333;
+    /* Cambia el color del texto según tus preferencias */
+}
+
+.login-container,
+.registro-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo semitransparente para mejorar legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container,
+.registro-container {
+    text-align: center;
+    /* Alinea el contenido al centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.login-container h2,
+.registro-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input,
+.registro-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button,
+.registro-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover,
+.registro-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p,
+.registro-container p {
+    margin-top: 10px;
+}
+
+/*Parte del formulario de registro*/
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+    /* Form oculto en la parte de arriba */
+}
